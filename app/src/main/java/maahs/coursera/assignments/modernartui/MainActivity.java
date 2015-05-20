@@ -100,14 +100,14 @@ public class MainActivity extends ActionBarActivity {
 
         if (id == R.id.more_info) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setPositiveButton(R.string.visit_moma, new DialogInterface.OnClickListener() {
+            builder.setNegativeButton(R.string.visit_moma, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL));
                     startActivity(intent);
                 }
             });
-            builder.setNegativeButton(R.string.not_now, null);
+            builder.setPositiveButton(R.string.not_now, null);
             builder.setTitle(R.string.more_information_title);
             builder.show();
             return true;

@@ -5,3 +5,4 @@ gradle/
 /.idea/workspace.xml
 /.idea/libraries
 local.propertie
+local.properties
